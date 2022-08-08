@@ -1,0 +1,187 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: 0;
+   text-decoration: none;
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+   background-color: #fff;
+}
+
+#login {
+   width: 45%;
+   margin: auto;
+   padding: 5px;
+}
+
+h1 {
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 1.5rem;
+   color: #1878F3;
+   padding: 10px 0;
+   text-align: center;
+}
+
+input {
+   width: 95%;
+   padding: 13px;
+   margin: 5px 12px;
+   background-color: whitesmoke;
+   border: none;
+   border: 0.1px solid gray;
+   border-radius: 5px;
+}
+
+input[name=txt-email]:focus,
+input[name=password]:focus {
+   outline: 0.5px solid #1878F3;
+}
+
+input[type=submit] {
+   background-color: #1878F3;
+   color: #fff;
+   font-weight: 700;
+   font-size: 1rem;
+}
+
+.para {
+   padding: 10px 0 1rem 0;
+   text-align: center;
+   font-size: 1rem;
+   color: #1878F3;
+}
+
+.hr-g {
+   display: flex;
+}
+
+hr {
+   border: none;
+   height: 0.1px;
+   background-color: gray;
+}
+
+.hr {
+   width: 43%;
+   margin: 9px auto 7px auto;
+}
+
+input[type=button] {
+   width: unset;
+   background-color: #42B72A;
+   color: #fff;
+   font-weight: 700;
+   font-size: 1rem;
+   display: block;
+   margin: 16px auto;
+}
+
+.links {
+   padding-top: 50px;
+   display: grid;
+   grid-template-columns: auto auto;
+}
+
+.links p {
+   text-align: center;
+}
+
+.links p a {
+   color: steelblue;
+   font-size: 0.9rem;
+}
+
+.links p a.bold {
+   font-weight: 600;
+   color: gray;
+}
+
+button {
+   padding: 0 5px;
+   border: 1px solid steelblue;
+   border-radius: 3px;
+   color: gray;
+}
+
+.center {
+   text-align: center;
+}
+
+ul {
+   display: inline-block;
+}
+
+li {
+   padding: 0 7px;
+   list-style-position: inside;
+   font-size: 0.9rem;
+   float: left;
+   color: gray;
+}
+
+li:first-child {
+   list-style-type: none;
+}
+
+.copy {
+   text-align: center;
+   color: gray;
+   font-size: 1.1rem;
+   padding: 1px 5px;
+}
+
+@media screen and (max-width: 672px) {
+
+   #login {
+      width: 65%;
+   }
+
+   input {
+      font-size: 1.1rem;
+   }
+
+   input[type=button] {
+      margin: 14px auto;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   body {
+      height: 100vh;
+   }
+
+   #login {
+      width: 95%;
+   }
+
+   input {
+      font-size: 1rem;
+      margin: 5px 8px;
+   }
+
+   input[type=button] {
+      padding: 10px;
+      font-weight: 500;
+   }
+
+   .links {
+      padding-top: 80px;
+   }
+
+   .links p a {
+      font-size: 0.8rem;
+   }
+
+   li {
+      font-size: 0.7rem;
+   }
+
+   .copy {
+      font-size: 1rem;
+      padding: 5px;
+   }
+}
